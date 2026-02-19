@@ -14,7 +14,7 @@ export const useSEO = ({
   title,
   description,
   keywords,
-  ogImage = 'https://hondaanzee.be/og-image.jpg',
+  ogImage = 'https://fietsaanzee.be/fietshero.jpg',
   canonical,
   structuredData
 }: SEOProps) => {
@@ -45,7 +45,7 @@ export const useSEO = ({
     updateMeta('og:title', title, true);
     updateMeta('og:description', description, true);
     updateMeta('og:image', ogImage, true);
-    updateMeta('og:url', canonical || `https://hondaanzee.be${location.pathname}`, true);
+    updateMeta('og:url', canonical || `https://fietsaanzee.be${location.pathname}`, true);
 
     // Twitter Card
     updateMeta('twitter:title', title);
@@ -59,7 +59,7 @@ export const useSEO = ({
       linkCanonical.setAttribute('rel', 'canonical');
       document.head.appendChild(linkCanonical);
     }
-    linkCanonical.setAttribute('href', canonical || `https://hondaanzee.be${location.pathname}`);
+    linkCanonical.setAttribute('href', canonical || `https://fietsaanzee.be${location.pathname}`);
 
     // Structured Data
     if (structuredData) {
@@ -83,44 +83,44 @@ export const useSEO = ({
 // SEO Metadata for each page type
 export const SEO_DATA = {
   home: {
-    title: 'Honden aan Zee België 2026 | Strandregels, Losloopzones & Hondvriendelijke Plekken aan de Belgische Kust',
-    description: '✓ Actuele strandregels voor honden ✓ Losloopzones en hondenweides ✓ Hondvriendelijke cafés, restaurants & hotels ✓ Alle badsteden van De Panne tot Knokke ✓ Gratis & up-to-date info 2026',
-    keywords: 'hond strand belgië, hond aan zee, hondenstrand belgië, losloopzone hond kust, hondvriendelijk strand, strand met hond belgie, wandelen hond zee, hondvriendelijk restaurant kust, strandregels honden 2026'
+    title: 'FietsAanZee.be | Dé Fietsgids voor de Belgische Kust 2026 — Routes, Verhuur & Oplaadpunten',
+    description: '✓ Mooiste fietsroutes langs de kust ✓ Fietsverhuur per badstad ✓ Oplaadpunten e-bikes ✓ Fietscafés met zeezicht ✓ Van De Panne tot Knokke ✓ Gratis & actueel 2026',
+    keywords: 'fiets aan zee, fietsen belgische kust, fietsroute kust, fietsverhuur zee, elektrische fiets kust, oplaadpunt fiets strand, fietscafé zee, kustroute fiets, fietspad duinen'
   },
   
   hotspots: {
-    title: 'Hondvriendelijke Hotspots Belgische Kust | Cafés, Restaurants & Hotels waar Honden Welkom Zijn',
-    description: 'Ontdek de beste hondvriendelijke cafés, restaurants en hotels aan de Belgische kust. Van Oostende tot Knokke - waar je hond écht welkom is. Filter op stad en type.',
-    keywords: 'hondvriendelijk restaurant belgië kust, hondvriendelijk café aan zee, hotel honden toegelaten kust, hondvriendelijk terras zee, hond welkom restaurant, hond toegestaan café, hondvriendelijke horeca kust'
+    title: 'Fietscafés & Stops Belgische Kust | De Leukste Tussenstops voor Fietsers',
+    description: 'Ontdek de beste fietscafés en stops aan de Belgische kust. Van Oostende tot Knokke - waar je even kunt uitrusten met zicht op zee.',
+    keywords: 'fietscafé belgische kust, fietsstop aan zee, terras fietsers kust, tussenstop fietsroute, café fietsers zee'
   },
   
   diensten: {
-    title: 'Dierenartsen & Dierenwinkels Belgische Kust | Praktische Diensten voor Hondenbezitters',
-    description: 'Vind de beste dierenartsen en dierenwinkels aan de Belgische kust. Van Oostende tot Knokke - alle praktische diensten voor je hond op één plek. Filter op stad en type.',
-    keywords: 'dierenarts aan zee belgië, dierenwinkel kust belgië, dierenspeciaalzaak strand, dierenarts oostende, petshop aan zee, hondentrimsalon kust, dierenarts knokke, dierenwinkel blankenberge'
+    title: 'Fietsverhuur & Oplaadpunten Belgische Kust | Praktische Diensten voor Fietsers',
+    description: 'Vind de beste fietsverhuurpunten en oplaadstations aan de Belgische kust. Van Oostende tot Knokke - alle praktische diensten voor fietsers op één plek.',
+    keywords: 'fietsverhuur aan zee belgië, oplaadpunt elektrische fiets kust, fietsenstalling strand, fietsreparatie kust, fietsverhuur oostende'
   },
 
   losloopzones: {
-    title: 'Losloopzones Belgische Kust | Overzicht Hondenweides & Losloopgebieden aan Zee',
-    description: 'Interactieve kaart met alle losloopzones en hondenweides aan de Belgische kust. Van De Panne tot Knokke - vind de perfecte plek waar je hond vrij kan loslopen. Met ratings, foto\'s en routebeschrijvingen.',
-    keywords: 'losloopzone hond kust belgië, hondenweide aan zee, hondenlosloopgebied strand, vrij loslopen hond zee, omheinde hondenweide kust, losloopzone oostende, hondenweide knokke, losloopgebied de haan'
+    title: 'Fietsroutes Belgische Kust | Overzicht Routes & Fietspaden aan Zee',
+    description: 'Interactieve kaart met alle fietsroutes en paden aan de Belgische kust. Van De Panne tot Knokke - vind de perfecte route voor jouw niveau.',
+    keywords: 'fietsroute belgische kust, fietspad aan zee, kustfietsroute, fietsen duinen, fietsroute polders kust'
   },
   
   privacy: {
-    title: 'Privacybeleid | HondAanZee.be',
-    description: 'Privacybeleid van HondAanZee.be - Hoe wij omgaan met je gegevens volgens AVG/GDPR',
+    title: 'Privacybeleid | FietsAanZee.be',
+    description: 'Privacybeleid van FietsAanZee.be - Hoe wij omgaan met je gegevens volgens AVG/GDPR',
     keywords: ''
   },
   
   terms: {
-    title: 'Algemene Voorwaarden | HondAanZee.be',
-    description: 'Algemene voorwaarden voor het gebruik van HondAanZee.be',
+    title: 'Algemene Voorwaarden | FietsAanZee.be',
+    description: 'Algemene voorwaarden voor het gebruik van FietsAanZee.be',
     keywords: ''
   },
   
   cookies: {
-    title: 'Cookiebeleid | HondAanZee.be',
-    description: 'Cookiebeleid van HondAanZee.be - Welke cookies we gebruiken en waarom',
+    title: 'Cookiebeleid | FietsAanZee.be',
+    description: 'Cookiebeleid van FietsAanZee.be - Welke cookies we gebruiken en waarom',
     keywords: ''
   }
 };
@@ -128,38 +128,38 @@ export const SEO_DATA = {
 // Generate city-specific SEO data
 export const getCitySEO = (cityName: string, citySlug: string) => {
   const searchTerms = [
-    `hond strand ${cityName.toLowerCase()}`,
-    `hondenstrand ${cityName.toLowerCase()}`,
-    `losloopzone ${cityName.toLowerCase()}`,
-    `strandregels hond ${cityName.toLowerCase()}`,
-    `hond toegestaan strand ${cityName.toLowerCase()}`,
-    `wandelen hond ${cityName.toLowerCase()}`,
-    `hondenweide ${cityName.toLowerCase()}`,
-    `hondvriendelijk ${cityName.toLowerCase()}`
+    `fietsen ${cityName.toLowerCase()}`,
+    `fietsroute ${cityName.toLowerCase()}`,
+    `fietsverhuur ${cityName.toLowerCase()}`,
+    `oplaadpunt fiets ${cityName.toLowerCase()}`,
+    `fietspad ${cityName.toLowerCase()}`,
+    `fietscafé ${cityName.toLowerCase()}`,
+    `elektrische fiets ${cityName.toLowerCase()}`,
+    `fietsen aan zee ${cityName.toLowerCase()}`
   ];
 
   return {
-    title: `Hond Strand ${cityName} 2026 | Strandregels, Losloopzones & Hondvriendelijke Plekken ${cityName}`,
-    description: `✓ Actuele strandregels voor honden in ${cityName} ✓ Losloopzones en hondenweides ✓ Waar mag je hond vrij lopen? ✓ Seizoensregels winter & zomer ✓ Hondvriendelijke cafés en restaurants in ${cityName}`,
+    title: `Fietsen ${cityName} 2026 | Fietsroutes, Verhuurpunten & Oplaadpunten ${cityName}`,
+    description: `✓ Mooiste fietsroutes in ${cityName} ✓ Fietsverhuur overzicht ✓ Oplaadpunten e-bikes ✓ Fietscafés en stops ✓ De leukste tussenstops in ${cityName} aan de Belgische kust`,
     keywords: searchTerms.join(', '),
-    canonical: `https://hondaanzee.be/#/${citySlug}`,
+    canonical: `https://fietsaanzee.be/#/${citySlug}`,
     structuredData: {
       "@context": "https://schema.org",
       "@type": "TouristDestination",
-      "name": `${cityName} - Hondvriendelijk Strand`,
-      "description": `Informatie over strandregels en faciliteiten voor honden in ${cityName} aan de Belgische kust`,
-      "url": `https://hondaanzee.be/#/${citySlug}`,
+      "name": `${cityName} - Fietsen aan Zee`,
+      "description": `Informatie over fietsroutes, verhuurpunten en oplaadstations in ${cityName} aan de Belgische kust`,
+      "url": `https://fietsaanzee.be/#/${citySlug}`,
       "isAccessibleForFree": true,
       "publicAccess": true,
       "geo": {
         "@type": "GeoCoordinates",
         "addressCountry": "BE"
       },
-      "touristType": ["Pet Owner", "Dog Owner"],
+      "touristType": ["Cyclist", "Sports Enthusiast"],
       "amenityFeature": [
         {
           "@type": "LocationFeatureSpecification",
-          "name": "Hondvriendelijk strand",
+          "name": "Fietsvriendelijke kust",
           "value": true
         }
       ]
