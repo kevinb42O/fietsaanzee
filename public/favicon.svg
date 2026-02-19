@@ -1,22 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <!-- Blue rounded square background -->
-  <rect width="512" height="512" rx="96" ry="96" fill="#0284c7"/>
+  <!-- Amber rounded square background -->
+  <rect width="512" height="512" rx="96" ry="96" fill="#f59e0b"/>
   
-  <!-- White paw print -->
-  <g transform="translate(256, 256) scale(8)" fill="white">
-    <!-- Main pad (bottom) -->
-    <ellipse cx="0" cy="8" rx="8" ry="7"/>
-    
-    <!-- Top left toe -->
-    <ellipse cx="-9" cy="-4" rx="5" ry="5.5" transform="rotate(-15, -9, -4)"/>
-    
-    <!-- Top left inner toe -->
-    <ellipse cx="-3" cy="-9" rx="4.5" ry="5" transform="rotate(-5, -3, -9)"/>
-    
-    <!-- Top right inner toe -->
-    <ellipse cx="3" cy="-9" rx="4.5" ry="5" transform="rotate(5, 3, -9)"/>
-    
-    <!-- Top right toe -->
-    <ellipse cx="9" cy="-4" rx="5" ry="5.5" transform="rotate(15, 9, -4)"/>
+  <!-- White bike icon -->
+  <g transform="translate(256, 280)" fill="none" stroke="white" stroke-width="28" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Left wheel -->
+    <circle cx="-120" cy="0" r="70"/>
+    <!-- Right wheel -->
+    <circle cx="120" cy="0" r="70"/>
+    <!-- Frame -->
+    <path d="M-120 0 L-30 -90 L60 -90 L120 0"/>
+    <path d="M-30 -90 L30 0 L120 0"/>
+    <!-- Seat -->
+    <path d="M-30 -90 L-30 -120"/>
+    <path d="M-50 -120 L-10 -120"/>
+    <!-- Handlebar -->
+    <path d="M60 -90 L60 -130"/>
+    <path d="M40 -130 L80 -130"/>
   </g>
 </svg>
